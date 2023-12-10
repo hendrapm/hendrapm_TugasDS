@@ -15,7 +15,7 @@ public class Runner {
         System.out.print("Input Nilai Y     : ");
         valueY = inputUser.nextInt();
 
-        System.out.print("Operator:\n1. Penjumlahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian\nPilih Operator    : ");
+        System.out.print("Operator:\n1. Penjumlahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian\n5. Modulus\nPilih Operator    : ");
         operator = inputUser.nextInt();
         switch (operator) {
             case 1:
@@ -29,6 +29,9 @@ public class Runner {
                 break;
             case 4:
                 operation.div(valueX, valueY);
+                break;
+            case 5:
+                operation.mod(valueX, valueY);
                 break;
         
             default:
